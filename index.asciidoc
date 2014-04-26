@@ -103,8 +103,8 @@ $ git clone http://$TUTORIAL.git
 
 [.topic.source]
 == Gerando e publicando slides no GitHub Pages
-* Na segunda 28/04, retorne para esses slides!
-** Haverá vários a mais, aqui, explicando sobre isso
+* Na segunda 28/04, retorne a esses slides!
+** Haverá muitos outros explicando sobre isso
 * Teu desafio começa nesse dia!
 ** Você terá 1 semana para concluir esse tutorial: 5 de maio
 
