@@ -1,17 +1,27 @@
 #!/bin/bash
-T=~/'tutorial de git e github'
-TUTORIAL=github.com/paulojeronimo/tutorial-git-github
+TUTO_DIR=~/'tutorial de git e github'
+TUTO=github.com/paulojeronimo/tutorial-git-github
 
-mkdir -p "$T"
-cat > "$T"/ambiente <<'EOF'
+mkdir -p "$TUTO_DIR"
+cat > "$TUTO_DIR"/ambiente <<'EOF'
 export SEU_NOME='Aluno do PJ'
 export SEU_USUARIO=alunodopj
 export SEU_TWITTER=@alunodopj
 EOF
 
-source "$T"/ambiente
+source "$TUTO_DIR"/ambiente
 
-mkdir -p "$T"/github.com/$SEU_USUARIO
-cd "!$"
-cp -r "$T"/$TUTORIAL/slides-no-github/index.asciidoc .
-cp -r "$T"/$TUTORIAL/build .
+d="$TUTO_DIR"/github.com/paulojeronimo
+mkdir -p "$d" && cd "$d"
+git clone https://$TUTO.git
+
+d="$TUTO_DIR"/github.com/$SEU_USUARIO
+mkdir -p "$d" && cd "$d"
+cp -r "$TUTO_DIR"/$TUTO/slides-no-github/index.asciidoc .
+cp -r "$TUTO_DIR"/$TUTO/build .
+
+sed -i "" "
+s/SEU_NOME/$SEU_NOME/g
+s/SEU_USUARIO/$SEU_USUARIO/g
+s/SEU_TWITTER/$SEU_TWITTER/g
+" index.asciidoc
