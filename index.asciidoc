@@ -1,0 +1,127 @@
+= Tutorial de Git e GitHub no FLISOL-DF
+Paulo Jerônimo; @paulojeronimo
+include::atributos.conf[]
+
+[.topic.source]
+== Sobre
+[.incremental]
+* Este é um tutorial sobre http://git-scm.com/[Git] e http://github.com/[GitHub]
+** Mas, não apenas sobre eles!
+** Ao final, me responda: o que mais você aprendeu? _:D_
+* _É prático, mão na massa! Faça-o!_
+** Baixe e execute em teu ambiente
+* _Incentivo: 50% de desconto na assinatura do curso online_. Regras
+** Siga-me e  _tweet_: Aprendendo #git e #github com o http://twitter.com/paulojeronimo[@paulojeronimo] no http://twitter.com/flisoldf[@flisoldf]
+** _Conclua esse tutorial_ até o dia 03 de maio
+
+[.topic.source]
+== Pesquisa de público
+[.incremental]
+* Quem desenvolve?
+** Bash? C/C++? PHP? Java? Python? Ruby? Outras linguagens??
+* Quem trabalha com infraestrutura?
+* Quem tem blog?
+* Algum escritor de apostilas e/ou livros?
+* Quem tem conta no Twitter?
+* Quem tem conta no Facebook?
+* Quem tem conta no GitHub?
+* Quem tem conta no Linkedin?
+
+[.topic.source]
+== Instalando o necessário para este tutorial
+[.incremental]
+* Alternativa 1: instale todas as ferramentas em teu próprio S.O. sem usar uma VM
+** Pode até não ser Linux! Exemplo: OS X _:D_
+*** Se for o "Janelas": não suporto, não uso, não me pergunte a respeito! _;)_
+* Alternativa 2 (_utilizada nesta apresentação_)
+** Baixe e utilize uma VM com todas as ferramentas já instaladas
+*** VM Fedora 20 para o VirtualBox: http://gdriv.es/vm-fedora
+* Meu ambiente neste tutorial:
+** HOST: MacBook Pro, http://j.mp/fedora-mac[dual-boot (OS X Mavericks 10.9.2/Fedora 20)]
+*** Intel Core i5 2.4 GHz, RAM 8 GB, SSD 180.05 GB
+** VM (executada pelo http://virtualBox.org[VirtualBox]): _Fedora 20_
+*** RAM 1 GB, HD 8 GB
+
+[.topic.intro]
+== Mão na massa!
+
+[.topic.source]
+== Baixando e instalando a VM
+* Baixe e instale o VirtualBox mais atual
+** https://www.virtualbox.org/wiki/Downloads
+* Baixe e descompacte a VM deste tutorial
+** No "Janelas", _não facilito ;)_ - troque de sistema operacional ou entenda o que faço abaixo e adapte!
+** No Linux, ou OS X, execute:
+[source,bash]
+----
+$ cd ~/VirtualBox\ VMs/
+$ bash <(curl -L http://j.mp/vm-fedora-download)
+$ 7za x vm-fedora.7z.001
+----
+
+[.topic.source]
+== Iniciando a VM
+* Registre, tire um snapshot, inicie a VM e faça o login
+** usuário/senha = aluno/@lun0123
+[source,bash]
+----
+$ VBoxManage registervm "$PWD/vm-fedora/vm-fedora.vbox"
+$ VBoxManage snapshot vm-fedora take fedora-pos-install
+$ VBoxManage startvm vm-fedora
+----
+* https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#231-configurando-teclado-e-proxy[Configure teclado e proxy, se necessário]
+* https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#232-utilizando-o-seu-mirror-local-ao-inv%C3%A9s-dos-remotos[Configure o uso de seu mirror local, caso você o tenha]
+* https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#24-atualizando-os-pacotes-da-vm[Atualize os pacotes da VM]
+
+[.topic.source]
+== Instalando o Git e baixando o tutorial disponível no GitHub
+* Instale o Git
+[source,bash]
+----
+$ sudo yum -y install git
+----
+* Utilize o Git para fazer o clone do projeto no GitHub
+[source,bash]
+----
+$ git clone http://github.com/paulojeronimo/tutorial-git-github
+----
+
+[.topic.ending]
+== Perguntas!?
+
+[.topic.source]
+== Curso online de Git
+[.incremental]
+* Assinatura: R$ 99,00
+** Válida durante 30 dias
+** Renovação por mais 30 dias: R$ 49,00
+* Direitos:
+** Vídeos sob demanda, a medida em que você entrega tarefas
+** Meu suporte via email 
+*** apenas para os assuntos relativos aos tópicos do curso
+* Detalhes? pj@paulojeronimo.info
+
+[.topic.source]
+== Paulo Jerônimo
+* Desenvolvedor, autor de cursos e materiais instrucionais
+** Linux, Git/GitHub, Java EE, http://github.com/paulojeronimo/livro-jboss/[JBoss em Produção], WildFly
+** Sites (em https://github.com/paulojeronimo/join-community-2014/blob/master/submissao.adoc[processo de migração] p/ o https://pages.github.com/[GitHub Pages])
+*** http://paulojeronimo.info - os novos conteúdos serão apenas em inglês
+*** http://ladoservidor.com - conteúdos em português. Você poderá contribuir!
+* Atualmente, analista de suporte na empresa http://mais2x.com.br/[+2X], em Brasília/DF
+** Suporte a JBoss em produção na Caixa Econômica Federal
+** Histórico profissional: http://j.mp/curriculopj
+
+[.topic.source]
+== Paulo Jerônimo
+* Triatleta, Ironman:
+** Próximo (2º): 29/Jun/2014
+** Natação/Ciclismo/Corrida: 3,8/180/42,195 Km; Prazo: 17 horas
+* Tentando arrumar tempo para continuar o desenvolvimento de um produto para atletas e treinadores:
+** http://a.paulojeronimo.info/3plans/docs/index.html
+
+[.topic.ending, hrole="name"]
+== Paulo Jerônimo
+
+[.footer]
+[icon-twitter]'{zwsp}' @paulojeronimo
