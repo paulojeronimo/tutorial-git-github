@@ -1,12 +1,13 @@
 #!/bin/bash
-
+set -x
 source "$TUTO_HOME/ambiente"
 
 sed_i() {
-   local params=$@
-   case `uname -a` in
-      Darwin) sed_i=sed -i '' $params;;
-      Linux) sed_i=sed -i $params;;
+   local comandos=$1
+   local arquivo=$2
+   case `uname` in
+      Darwin) sed -i '' "$comandos" $arquivo;;
+      Linux) sed -i "$comandos" $arquivo;;
    esac
 }
 
