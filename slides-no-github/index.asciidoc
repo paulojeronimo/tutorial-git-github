@@ -1,0 +1,27 @@
+= Slides no GitHub Pages
+SEU_USUARIO; SEU_TWITTER
+include::atributos.conf[]
+
+[.topic.source]
+== Sobre
+[.incremental]
+* Slides de exemplo no GitHub Pages
+** Criado por SEU_USUARIO
+* Resultado da execução do http://paulojeronimo.github.io/tutorial-git-github[tutorial de _Git e GitHub_]
+** Ministrado por http://paulojeronimo.info[Paulo Jerônimo] (PJ)
+
+[.topic.ending]
+== Perguntas!?
+
+[.topic.source]
+== SEU_USUARIO
+[.incremental]
+* Sou CARGO
+* Trabalho na EMPRESA
+* Recomendo o tutorial do PJ!
+
+[.topic.ending, hrole="name"]
+== SEU_USUARIO
+
+[.footer]
+[icon-twitter]'{zwsp}' SEU_TWITTER

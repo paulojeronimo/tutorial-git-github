@@ -1,5 +1,5 @@
 = Tutorial de Git e GitHub no FLISOL-DF
-Paulo Jerônimo; @paulojeronimo
+http://paulojeronimo.github.io/tutorial-git-github
 include::atributos.conf[]
 
 [.topic.source]
@@ -10,8 +10,9 @@ include::atributos.conf[]
 ** Ao final, me responda: o que mais você aprendeu? _:D_
 * _É prático, mão na massa! Faça-o!_
 ** Baixe e execute em teu ambiente
-* _Incentivo: 50% de desconto na assinatura do curso online_. Regras
-** Siga-me e  _tweet_: Aprendendo #git e #github com o http://twitter.com/paulojeronimo[@paulojeronimo] no http://twitter.com/flisoldf[@flisoldf]
+* _Incentivo: 50% de desconto na assinatura do meu curso online_. Regras:
+** Siga-me (http://twitter.com/paulojeronimo[@paulojeronimo])
+** _Tweet_: Aprendendo #git e #github com o @paulojeronimo no http://twitter.com/flisoldf[@flisoldf]
 ** _Conclua esse tutorial_ até o dia 03 de maio
 
 [.topic.source]
@@ -80,10 +81,51 @@ $ VBoxManage startvm vm-fedora
 ----
 $ sudo yum -y install git
 ----
-* Utilize o Git para fazer o clone do projeto no GitHub
+* Utilize o Git para clonar meu tutorial no GitHub
 [source,bash]
 ----
-$ git clone http://github.com/paulojeronimo/tutorial-git-github
+$ export TUTORIAL=github.com/paulojeronimo/tutorial-git-github
+$ mkdir -p ~/$TUTORIAL
+$ cd !$
+$ git clone http://$TUTORIAL.git
+----
+
+[.topic.intro]
+== GitHub Pages
+
+[.topic.source]
+== Gerando e publicando slides no GitHub Pages
+* Crie o repositório slides-no-github
+[source,bash]
+----
+$ mkdir -p ~/github.com/$SEU_USUARIO
+$ cd !$
+$ cp -R ~/$TUTORIAL/slides-no-github .
+$ cp ~/$TUTORIAL/build .
+$ git init .
+----
+
+[.topic.source]
+== Criando a branch gh-pages
+* Crie a branch gh-pages e remova a branch master:
+[source,bash]
+----
+$ git branch gh-pages
+$ git checkout !$
+$ git branch -d master
+----
+
+[.topic.source]
+== Criando e publicando o repositório no GitHub
+* Crie o repositório slides-no-gitub, no GitHub! _;)_
+* Publique seu repositório:
+[source,bash]
+----
+$ git remote add origin \
+https://github.com/$SEU_USUARIO/slides-no-github.git
+$ git add .
+$ git commit -m 'commit inicial'
+$ git push -u origin gh-pages
 ----
 
 [.topic.ending]

@@ -1,0 +1,16 @@
+#!/bin/bash
+T=~/'tutorial de git e github'
+TUTORIAL=github.com/paulojeronimo/tutorial-git-github
+
+cat > "$T"/ambiente <<'EOF'
+export SEU_NOME='Aluno do PJ'
+export SEU_USUARIO=alunodopj
+export SEU_TWITTER=@alunodopj
+EOF
+
+source "$T"/ambiente
+
+mkdir -p "$T"/github.com/$SEU_USUARIO
+cd "!$"
+cp -r "$T"/$TUTORIAL/slides-no-github/index.asciidoc .
+cp -r "$T"/$TUTORIAL/build .
