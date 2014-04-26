@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 source "$TUTO_HOME/ambiente"
 
 sed_i() {
