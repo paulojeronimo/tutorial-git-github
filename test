@@ -2,6 +2,8 @@
 TUTO_DIR=~/'tutorial de git e github'
 TUTO=github.com/paulojeronimo/tutorial-git-github
 
+rm -rf "$TUTO_DIR"
+
 mkdir -p "$TUTO_DIR"
 cat > "$TUTO_DIR"/ambiente <<'EOF'
 export SEU_NOME='Aluno do PJ'

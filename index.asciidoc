@@ -135,7 +135,7 @@ $ git push -u origin gh-pages
 == Curso online de Git
 [.incremental]
 * Assinatura: R$ 99,00
-** Válida durante 30 dias
+** Válida por 30 dias! Se você não terminar o curso nesse tempo ...
 ** Renovação por mais 30 dias: R$ 49,00
 * Direitos:
 ** Vídeos sob demanda, a medida em que você entrega tarefas
