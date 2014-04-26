@@ -2,6 +2,7 @@
 T=~/'tutorial de git e github'
 TUTORIAL=github.com/paulojeronimo/tutorial-git-github
 
+mkdir -p "$T"
 cat > "$T"/ambiente <<'EOF'
 export SEU_NOME='Aluno do PJ'
 export SEU_USUARIO=alunodopj
