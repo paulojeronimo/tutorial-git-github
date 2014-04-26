@@ -13,7 +13,7 @@ include::atributos.conf[]
 * Incentivo: _50% de desconto na assinatura_ do meu curso online de Git e GitHub. Regras:
 ** Siga-me (http://twitter.com/paulojeronimo[@paulojeronimo])
 ** _Tweet_: Aprendendo #git e #github com o @paulojeronimo no http://twitter.com/flisoldf[@flisoldf]
-** _Conclua esse tutorial_ até o dia 03 de maio
+** Inicie esse tutorial na segunda (28/04) e deixe-o concluído até o dia 5 de maio
 
 [.topic.source]
 == Pesquisa de público
@@ -84,49 +84,29 @@ $ sudo yum -y install git
 * Utilize o Git para clonar meu tutorial no GitHub
 [source,bash]
 ----
-$ export TUTORIAL=github.com/paulojeronimo/tutorial-git-github
-$ mkdir -p ~/$TUTORIAL
+$ export TUTO_HOME=~/tutorial-git-github
+$ TUTO=github.com/paulojeronimo/tutorial-git-github
+$ mkdir -p $TUTO_HOME/$TUTO
 $ cd !$
 $ git clone http://$TUTORIAL.git
 ----
+
+[.topic.intro]
+== Introdução ao Git
+
+== Aprendendo o básico
+* Aprenda os comandos básicos do Git seguindo esse tutorial:
+** http://a.paulojeronimo.info/tutoriais/git/index.html
 
 [.topic.intro]
 == GitHub Pages
 
 [.topic.source]
 == Gerando e publicando slides no GitHub Pages
-* Crie o repositório slides-no-github
-[source,bash]
-----
-$ mkdir -p ~/github.com/$SEU_USUARIO
-$ cd !$
-$ cp -R ~/$TUTORIAL/slides-no-github .
-$ cp ~/$TUTORIAL/build .
-$ git init .
-----
-
-[.topic.source]
-== Criando a branch gh-pages
-* Crie a branch gh-pages e remova a branch master:
-[source,bash]
-----
-$ git branch gh-pages
-$ git checkout !$
-$ git branch -d master
-----
-
-[.topic.source]
-== Criando e publicando o repositório no GitHub
-* Crie o repositório slides-no-gitub, no GitHub! _;)_
-* Publique seu repositório:
-[source,bash]
-----
-$ git remote add origin \
-https://github.com/$SEU_USUARIO/slides-no-github.git
-$ git add .
-$ git commit -m 'commit inicial'
-$ git push -u origin gh-pages
-----
+* Na segunda 28/04, retorne para esses slides!
+** Haverá vários a mais, aqui, explicando sobre isso
+* Teu desafio começa nesse dia!
+** Você terá 1 semana para concluir esse tutorial: 5 de maio
 
 [.topic.ending]
 == Perguntas!?
