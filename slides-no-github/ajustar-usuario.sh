@@ -3,7 +3,7 @@
 source "$TUTO_HOME/ambiente"
 
 case `uname -a` in
-   Darwin) sed_i='sed -i ""';;
+   Darwin) sed_i='sed -i \"\"';;
    Linux) sed_i='sed -i';;
 esac
 
