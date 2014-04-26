@@ -1,29 +1,25 @@
 #!/bin/bash
-TUTO_DIR=~/'tutorial de git e github'
+export TUTO_HOME=~/'tutorial de git e github'
 TUTO=github.com/paulojeronimo/tutorial-git-github
 
-rm -rf "$TUTO_DIR"
+rm -rf "$TUTO_HOME"
 
-mkdir -p "$TUTO_DIR"
-cat > "$TUTO_DIR"/ambiente <<'EOF'
+mkdir -p "$TUTO_HOME"
+cat > "$TUTO_HOME"/ambiente <<'EOF'
 export SEU_NOME='Aluno do PJ'
 export SEU_USUARIO=alunodopj
 export SEU_TWITTER=@alunodopj
 EOF
 
-source "$TUTO_DIR"/ambiente
+source "$TUTO_HOME"/ambiente
 
-d="$TUTO_DIR"/github.com/paulojeronimo
+d="$TUTO_HOME"/github.com/paulojeronimo
 mkdir -p "$d" && cd "$d"
 git clone https://$TUTO.git
 
-d="$TUTO_DIR"/github.com/$SEU_USUARIO
+d="$TUTO_HOME"/github.com/$SEU_USUARIO
 mkdir -p "$d" && cd "$d"
-cp -r "$TUTO_DIR"/$TUTO/slides-no-github/index.asciidoc .
-cp -r "$TUTO_DIR"/$TUTO/build .
+cp -r "$TUTO_HOME"/$TUTO/slides-no-github/* .
+cp -r "$TUTO_HOME"/$TUTO/{atributos.conf,build} .
 
-sed -i "" "
-s/SEU_NOME/$SEU_NOME/g
-s/SEU_USUARIO/$SEU_USUARIO/g
-s/SEU_TWITTER/$SEU_TWITTER/g
-" index.asciidoc
+./ajustar-usuario.sh
