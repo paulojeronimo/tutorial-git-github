@@ -3,7 +3,7 @@ http://paulojeronimo.github.io/tutorial-git-github
 include::atributos.conf[]
 
 [.topic.intro]
-== Em construção! Não execute!
+== Aviso: em construção!
 
 [.topic.source]
 == Sobre
@@ -15,9 +15,24 @@ include::atributos.conf[]
 * Scripts Bash
 * http://asciidoctor.org[Asciidoctor]
 * http://paulrouget.com/dzslides/[DZSlides]
-* _É prático, mão na massa! Faça-o!_
-* Ao seu final, você terá um repositório publicado no GitHub:
+* _É prático, mão na massa! Execute-o!_
+
+[.topic.source]
+== Quando acabar a execução deste tutorial você terá ...
+[.incremental]
+* Realizado a instalação do VirtualBox em sua máquina
+* Criado uma máquina virtual (VM) que executa o Fedora 20
+* Aprendido a usar o VirtualBox em linhas de comando
+* Aprendido a usar o Git em linhas de comando
+* Uma conta no GitHub e no Twitter
+
+[.topic.source]
+== Quando acabar a execução deste tutorial você terá ...
+[.incremental]
+* Publicado um repositório em sua conta no GitHub
 ** http://github.com/SEU_USUARIO/tutorial-git-github-executado
+* Publicado slides escritos com Asciidoctor e DZSlides no GitHub Pages
+** http://SEU_USUARIO.github.io/tutorial-git-github-executado/
 
 [.topic.source]
 == Instalando o necessário para este tutorial
@@ -131,7 +146,7 @@ source !$
 ----
 
 [.topic.intro]
-== Introdução ao Git e ao GitHub
+== Usando o Git e o GitHub
 
 [.topic.source]
 == Entendendo a clonagem deste tutorial
