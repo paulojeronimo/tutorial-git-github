@@ -14,8 +14,10 @@ sed_i() {
 
 for f in *.asciidoc
 do 
-   sed_i "s/MEU_NOME/$MEU_NOME/g
+   sed_i "
+   s/MEU_NOME/$MEU_NOME/g
    s/MEU_EMAIL/$MEU_EMAIL/g
    s/MEU_USUARIO_NO_GITHUB/$MEU_USUARIO_NO_GITHUB/g
-   s/MEU_USUARIO_NO_TWITTER/$MEU_USUARIO_NO_TWITTER/g" $f
+   s/MEU_USUARIO_NO_TWITTER/$MEU_USUARIO_NO_TWITTER/g
+   " $f
 done

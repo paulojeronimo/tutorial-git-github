@@ -23,7 +23,7 @@ git clone https://$REPO.git
 # tag::criacao[]
 # Cria o diretório que conterá um novo repositório e muda para ele
 # O nome desse repositório será o mesmo de $REPO + -executado
-d="$TUTO_HOME"/github.com/$MEU_USUARIO/${REPO##g*/}-executado
+d="$TUTO_HOME"/github.com/$MEU_USUARIO_NO_GITHUB/${REPO##g*/}-executado
 mkdir -p "$d" && cd "$d"
 
 # Copia alguns arquivos do repositório $REPO
@@ -32,6 +32,6 @@ cp -r "$TUTO_HOME"/$REPO/{atributos.conf,build} .
 # end::criacao[]
 
 # tag::ajuste[]
-# Ajusta os arquivos copiados para o $MEU_USUARIO
+# Ajusta os arquivos copiados para o $d
 ./ajustar-usuario.sh
 # end::ajuste[]
