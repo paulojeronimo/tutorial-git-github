@@ -22,8 +22,8 @@ git clone https://$REPO.git
 
 # tag::criacao[]
 # Cria o diretório que conterá um novo repositório e muda para ele
-# Esse diretório terá o mesmo nome especificado em $REPO
-d="$TUTO_HOME"/github.com/$MEU_USUARIO/${REPO##g*/}
+# O nome desse repositório será o mesmo de $REPO + -executado
+d="$TUTO_HOME"/github.com/$MEU_USUARIO/${REPO##g*/}-executado
 mkdir -p "$d" && cd "$d"
 
 # Copia alguns arquivos do repositório $REPO

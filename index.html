@@ -41,7 +41,7 @@ export MEU_USUARIO_NO_TWITTER=paulojeronimo
 EOF
 
 # Configura o arquivo ~/.bashrc para carregar o arquivo ambiente
-s="source ~/\"$TUTO_HOME\"/ambiente"; f=~/.bashrc
+s="source \"$TUTO_HOME\"/ambiente"; f=~/.bashrc
 grep "^$s" $f &gt; /dev/null || echo "$s" &gt;&gt; $f</code></pre></div></section>
 <section class="topic source"><h2>Executando os comandos anteriores através de um script</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Baixe o script:
 f=configurar-ambiente.sh
@@ -64,8 +64,8 @@ mkdir -p "$d" &amp;&amp; cd "$d"
 # Faz o clone de $REPO
 git clone https://$REPO.git</code></pre></div></section>
 <section class="topic source"><h2>Entendendo a criação do diretório local</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Cria o diretório que conterá um novo repositório e muda para ele
-# Esse diretório terá o mesmo nome especificado em $REPO
-d="$TUTO_HOME"/github.com/$MEU_USUARIO/${REPO##g*/}
+# O nome desse repositório será o mesmo de $REPO + -executado
+d="$TUTO_HOME"/github.com/$MEU_USUARIO/${REPO##g*/}-executado
 mkdir -p "$d" &amp;&amp; cd "$d"
 
 # Copia alguns arquivos do repositório $REPO
