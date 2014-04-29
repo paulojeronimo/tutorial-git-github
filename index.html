@@ -23,9 +23,7 @@ VBoxManage startvm vm-fedora</code></pre></div></section>
 <section class="topic source"><h2>Executando os comandos anteriores através de um script</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Execute:
 bash &lt;(curl -L https://raw.githubusercontent.com/paulojeronimo/\
 tutorial-git-github/gh-pages/baixar-registrar-vm.sh)</code></pre></div></section>
-<section class="topic source"><h2>Fazendo o login e configurando a VM</h2><ul><li>Logue-se na VM<ul><li>usuário/senha = aluno/@lun0123</li></ul></li></ul>
-<div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight">ssh aluno@192.168.0.254</code></pre></div>
-<ul><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#231-configurando-teclado-e-proxy">Configure teclado e proxy, se necessário</a></li><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#232-utilizando-o-seu-mirror-local-ao-inv%C3%A9s-dos-remotos">Configure o uso de seu mirror local, caso você o tenha</a></li><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#24-atualizando-os-pacotes-da-vm">Atualize os pacotes da VM</a></li></ul></section>
+<section class="topic source"><h2>Fazendo o login e configurando a VM</h2><ul><li>Logue-se na console da VM<ul><li>usuário/senha = aluno/@lun0123</li></ul></li><li>Opcionalmente:<ul><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#231-configurando-teclado-e-proxy">Configure teclado e proxy</a></li><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#232-utilizando-o-seu-mirror-local-ao-inv%C3%A9s-dos-remotos">Configure o uso de seu mirror local</a></li></ul></li><li><a href="https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#24-atualizando-os-pacotes-da-vm">Atualize os pacotes da VM</a></li></ul></section>
 <section class="topic source"><h2>Fazendo a instalação do Git</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight">sudo yum -y install git</code></pre></div></section>
 <section class="topic source"><h2>Entendendo a criação do diretório do tutorial</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Variável indicando o local onde esse tutorial é executado
 export TUTO_HOME=~/'tutorial de git e github'
@@ -48,7 +46,7 @@ grep "^$s" $f &gt; /dev/null || echo "$s" &gt;&gt; $f</code></pre></div></sectio
 <section class="topic source"><h2>Executando os comandos anteriores através de um script</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Baixe o script:
 f=configurar-ambiente.sh
 curl -L https://raw.githubusercontent.com/paulojeronimo/\
-tutorial-git-github/gh-pages/$f -O /tmp/$f
+tutorial-git-github/gh-pages/$f -o /tmp/$f
 
 # Edite o script para informar os teus dados:
 vim !$
@@ -77,7 +75,7 @@ cp -r "$TUTO_HOME"/$REPO/{atributos.conf,build} .</code></pre></div></section>
 ./ajustar-usuario.sh</code></pre></div></section>
 <section class="topic source"><h2>Executando os comandos anteriores através de um script</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Execute:
 bash &lt;(curl -L https://raw.githubusercontent.com/paulojeronimo/\
-tutorial-git-github/gh-pages/baixar-tutorial-vm.sh)</code></pre></div></section>
+tutorial-git-github/gh-pages/baixar-tutorial.sh)</code></pre></div></section>
 <section class="topic source"><h2>Configurando o Git</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight">git config --global user.name "$MEU_NOME"
 git config --global user.email "$MEU_EMAIL"
 cat ~/.gitconfig</code></pre></div></section>

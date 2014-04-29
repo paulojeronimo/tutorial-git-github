@@ -73,15 +73,11 @@ tutorial-git-github/gh-pages/baixar-registrar-vm.sh)
 
 [.topic.source]
 == Fazendo o login e configurando a VM
-* Logue-se na VM
+* Logue-se na console da VM
 ** usuário/senha = aluno/@lun0123
-
-[source]
-----
-ssh aluno@192.168.0.254
-----
-* https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#231-configurando-teclado-e-proxy[Configure teclado e proxy, se necessário]
-* https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#232-utilizando-o-seu-mirror-local-ao-inv%C3%A9s-dos-remotos[Configure o uso de seu mirror local, caso você o tenha]
+* Opcionalmente:
+** https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#231-configurando-teclado-e-proxy[Configure teclado e proxy]
+** https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#232-utilizando-o-seu-mirror-local-ao-inv%C3%A9s-dos-remotos[Configure o uso de seu mirror local]
 * https://github.com/paulojeronimo/join-community-2014/blob/master/passo-a-passo.adoc#24-atualizando-os-pacotes-da-vm[Atualize os pacotes da VM]
 
 [.topic.source]
@@ -122,7 +118,7 @@ include::configurar-ambiente.sh[lines=10..20]
 # Baixe o script:
 f=configurar-ambiente.sh
 curl -L https://raw.githubusercontent.com/paulojeronimo/\
-tutorial-git-github/gh-pages/$f -O /tmp/$f
+tutorial-git-github/gh-pages/$f -o /tmp/$f
 
 # Edite o script para informar os teus dados:
 vim !$
@@ -165,7 +161,7 @@ include::baixar-tutorial.sh[tags=ajuste]
 ----
 # Execute:
 bash <(curl -L https://raw.githubusercontent.com/paulojeronimo/\
-tutorial-git-github/gh-pages/baixar-tutorial-vm.sh)
+tutorial-git-github/gh-pages/baixar-tutorial.sh)
 ----
 
 [.topic.source]
