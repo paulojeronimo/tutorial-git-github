@@ -67,7 +67,7 @@ include::baixar-registrar-vm.sh[lines=13..20]
 [source]
 ----
 # Execute:
-bash <(curl -L https://raw.githubusercontent.com/paulojeronimo/
+bash <(curl -L https://raw.githubusercontent.com/paulojeronimo/\
 tutorial-git-github/gh-pages/baixar-registrar-vm.sh)
 ----
 
