@@ -16,5 +16,5 @@ export MEU_USUARIO_NO_TWITTER=paulojeronimo
 EOF
 
 # Configura o arquivo ~/.bashrc para carregar o arquivo ambiente
-s="source $TUTO_HOME/ambiente"; f=~/.bashrc
+s="source \"$TUTO_HOME\"/ambiente"; f=~/.bashrc
 grep "^$s" $f > /dev/null || echo "$s" >> $f
