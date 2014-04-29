@@ -2,6 +2,6 @@
 :author: Paulo Jerônimo
 :email: pj@paulojeronimo.info
 
-Nesse diretório você encontra os link:index.asciidoc[slides] (link:index.html[HTML]) que utilizo no tutorial de Git/GitHub que ministro. Eles podem ser visualizados em qualquer (bom) browser compatível com HTML5 e CSS3.
+Nesse repositório você encontra os link:index.asciidoc[slides] que utilizo num tutorial sobre Git/GitHub que ministro. Eles podem ser visualizados em qualquer (bom) browser compatível com HTML5 e CSS3.
 
-Para gerá-los você deverá ter o http://asciidoctor.org[Asciidoctor] instalado. Você pode aprender como fazer sua instalação observando as instruções que publiquei no repositório https://github.com/paulojeronimo/join-community-2014[join-community-2014].
+Você pode visualizá-los em tua própria máquina através do link link:index.html[HTML local] mas, para isso, você deverá executar o script link:build[build] que utiliza o http://asciidoctor.org[Asciidoctor] para gerar esses slides. Você pode aprender a instalar o Asciidoctor observando as instruções que publiquei no repositório https://github.com/paulojeronimo/join-community-2014[join-community-2014].

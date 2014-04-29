@@ -1,12 +1,12 @@
 = Slides no GitHub Pages
-SEU_NOME; SEU_TWITTER
+MEU_NOME; @MEU_USUARIO_NO_TWITTER
 include::atributos.conf[]
 
 [.topic.source]
 == Sobre
 [.incremental]
 * Slides de exemplo no GitHub Pages
-** Criado por http://github.com/SEU_USUARIO[SEU_NOME]
+** Criado por http://github.com/MEU_USUARIO_NO_GITHUB/[MEU_NOME]
 * Resultado da execução do http://paulojeronimo.github.io/tutorial-git-github[tutorial de _Git e GitHub_]
 ** Ministrado por http://github.com/paulojeronimo[Paulo Jerônimo] (PJ)
 
@@ -14,14 +14,13 @@ include::atributos.conf[]
 == Perguntas!?
 
 [.topic.source]
-== SEU_NOME
+== MEU_NOME
 [.incremental]
-* Sou CARGO na EMPRESA
-* Estive no evento http://twitter.com/flisoldf[FLISOL-DF]
-* Participei e recomendo o tutorial do PJ!
+* Sou MEU_CARGO na MINHA_EMPRESA
+* Executei e recomendo o tutorial de Git e GitHub do PJ!
 
 [.topic.ending, hrole="name"]
-== SEU_NOME
+== MEU_NOME
 
 [.footer]
-[icon-twitter]'{zwsp}' SEU_TWITTER
+[icon-twitter]'{zwsp}' @MEU_USUARIO_NO_TWITTER

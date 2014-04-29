@@ -1,6 +1,6 @@
 = Minha execução do tutorial de Git e GitHub do Paulo Jerônimo =
-:author: SEU_NOME
-:email: SEU_EMAIL
+:author: MEU_NOME
+:email: MEU_EMAIL
 
 Nesse diretório você encontra os link:index.asciidoc[slides] (link:index.html[HTML]) que eu criei ao seguir o http://github.com/paulojeronimo/tutorial-git-github[tutorial de Git/GitHub do Paulo Jerônimo]. Eles podem ser visualizados em qualquer (bom) browser compatível com HTML5 e CSS3.
 

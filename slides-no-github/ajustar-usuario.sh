@@ -1,4 +1,6 @@
 #!/bin/bash
+# Author: Paulo Jerônimo (@paulojeronimo, pj@paulojeronimo.info)
+
 source "$TUTO_HOME/ambiente"
 
 sed_i() {
@@ -12,8 +14,8 @@ sed_i() {
 
 for f in *.asciidoc
 do 
-   sed_i "s/SEU_NOME/$SEU_NOME/g
-   s/SEU_EMAIL/$SEU_EMAIL/g
-   s/SEU_USUARIO/$SEU_USUARIO/g
-   s/SEU_TWITTER/$SEU_TWITTER/g" $f
+   sed_i "s/MEU_NOME/$MEU_NOME/g
+   s/MEU_EMAIL/$MEU_EMAIL/g
+   s/MEU_USUARIO_NO_GITHUB/$MEU_USUARIO_NO_GITHUB/g
+   s/MEU_USUARIO_NO_TWITTER/$MEU_USUARIO_NO_TWITTER/g" $f
 done
