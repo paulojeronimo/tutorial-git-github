@@ -41,7 +41,7 @@ export MEU_USUARIO_NO_TWITTER=paulojeronimo
 EOF
 
 # Configura o arquivo ~/.bashrc para carregar o arquivo ambiente
-s='source ambiente'; f=~/.bashrc
+s="source ~/\"$TUTO_HOME\"/ambiente"; f=~/.bashrc
 grep "^$s" $f &gt; /dev/null || echo "$s" &gt;&gt; $f</code></pre></div></section>
 <section class="topic source"><h2>Executando os comandos anteriores através de um script</h2><div class="listingblock"><pre class="highlight CodeRay"><code class="no-highlight"># Baixe o script:
 f=configurar-ambiente.sh
