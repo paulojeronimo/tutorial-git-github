@@ -9,12 +9,15 @@ include::atributos.conf[]
 == Sobre
 [.incremental]
 * Este é um tutorial prático sobre http://git-scm.com/[Git] e http://github.com/[GitHub]
-* Mas, vai além ...
+* Mas, vai além, também fala de ...
 * VirtualBox
 * Fedora
 * Scripts Bash
+* http://asciidoctor.org[Asciidoctor]
+* http://paulrouget.com/dzslides/[DZSlides]
 * _É prático, mão na massa! Faça-o!_
-** Baixe e execute este tutorial em teu ambiente
+* Ao seu final, você terá um repositório publicado no GitHub:
+** http://github.com/SEU_USUARIO/tutorial-git-github-executado
 
 [.topic.source]
 == Instalando o necessário para este tutorial
