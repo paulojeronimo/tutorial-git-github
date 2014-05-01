@@ -25,9 +25,12 @@ include::atributos.conf[]
 [.incremental]
 * Realizado a instalação do VirtualBox em sua máquina
 * Criado uma máquina virtual (VM) que executa o Fedora 20
-* Aprendido a usar o VirtualBox em linhas de comando
-* Aprendido a usar o Git em linhas de comando
-* Uma conta no GitHub e no Twitter
+* Aprendido algumas linhas de comando
+** VirtualBox
+** Git
+* Criado algumas contas:
+** GitHub 
+** Twitter
 
 [.topic.source]
 == Quando acabar a execução deste tutorial você terá ...
