@@ -36,6 +36,7 @@ _build() {
    do
       h=${f/asciidoc/html}
       [ ! -f "$h" ] && __build_SLIDES "$f"
+      [ atributos.conf -nt "$f" ] && touch "$f"
       [ "$f" -nt "$h" ] && __build_SLIDES "$f"
    done
 }
