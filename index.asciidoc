@@ -28,7 +28,7 @@ include::atributos.conf[]
 * Aprendido algumas linhas de comando
 ** VirtualBox
 ** Git
-* Criado algumas contas:
+* Utilizado (e/ou criado) suas contas de usuário
 ** GitHub 
 ** Twitter
 
